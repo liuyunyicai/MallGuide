@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/myScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <hust.mallguide.services.MyImageView
+                android:id="@+id/myImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/style20"
+                android:focusable="true"
+                android:clickable="true"
+                android:focusableInTouchMode="true"
+                />
+
+            <hust.mallguide.services.MyScrollListView
+                android:layout_marginTop="100dp"
+                android:id="@+id/myListView"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:focusable="false"
+                ></hust.mallguide.services.MyScrollListView>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>
